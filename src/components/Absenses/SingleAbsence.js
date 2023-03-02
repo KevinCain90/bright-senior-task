@@ -27,7 +27,7 @@ const SingleAbsence = ({absence}) => {
         .join(" ");
 
     return (
-        <tr>
+        <tr key={absence.id}>
             <td>{absence.employee.firstName} {absence.employee.lastName}</td>
             <td>{format(absence.startDate, 'DD MMM, YYYY')}</td>
             <td>{format(endDate, 'DD MMM, YYYY')}</td>
