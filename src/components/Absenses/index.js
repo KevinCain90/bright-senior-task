@@ -36,7 +36,7 @@ const Absences = () => {
           <th>End Date</th>
           <th>Absence type</th>
           <th>Status</th>
-          <th>Conflicting dates</th>
+          <th>Conflict</th>
         </tr>
         {absences.map((absence) => (
           <SingleAbsence absence={absence} />

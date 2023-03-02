@@ -33,7 +33,7 @@ const SingleAbsence = ({absence}) => {
             <td>{format(endDate, 'DD MMM, YYYY')}</td>
             <td>{type}</td>
             <td>{absence.absenceType ? 'Approved' : 'Pending'}</td>
-            <td>{hasConflict && 'Yes'}</td>
+            <td className="flex justify-center">{hasConflict && <div className="h-4 w-4 rounded-full bg-red-600"/>}</td>
         </tr>
     )
 }
