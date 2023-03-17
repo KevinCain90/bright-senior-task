@@ -27,9 +27,9 @@ const Absences = () => {
   }, [])
 
   return (
-    <div className="App">
+    <div className="w-full p-4 mt-6 border-slate-500">
       {error && <div>error fetching data</div>}
-      <table>
+      <table className='w-full table-auto'>
         <tr>
           <th>Employee name</th>
           <th>Start date</th>
